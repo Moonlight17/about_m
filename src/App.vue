@@ -1,25 +1,72 @@
 <template>
-  <div id="app" class="back">
-    <div id="about" class="align-self-start position-relative" :style="{'height': `${heightAbout}px`}">
+  <div id="app" class="back" style="">
+    <div id="about" class="align-self-start position-relative" :style="{'min-height': `${heightAbout}px`}">
       <!-- <div id="vertical"> -->
         <div class="position-absolute top-50 start-50 translate-middle name">
-          <p id="me">Serov Sergei</p>
+          <!-- <p id="me">Serov Sergei</p> -->
+            <StartedPage :name="name" :firstName="firstName"/>
           <div class="desc">
             <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
           </div>
         </div>
       <!-- </div> -->
+    <a href="" id="arrowDown" v-scroll-to="{ el: '#element', offset: -50 }"><font-awesome-icon icon="fa-solid fa-arrow-down" /></a>
     </div>
-    <div id="resume" class="align-self-start position-relative" :style="{'height': `${heightAbout}px`}">
+    <div id="resume" class="align-self-start position-relative" :style="{'min-height': `${heightAbout}px`}">
       <!-- <div id="vertical"> -->
-        <div class="position-absolute top-50 start-50 translate-middle">
+        <div id="element" class="position-absolute top-0 start-50 translate-middle-x">
           <h3>Hi 👋</h3>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
+          <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
           <p>My name is Sergei, I am an DevOps Engineer and you are on my webpage.</p>
         </div>
       <!-- </div> -->
     </div>
-    <img alt="Vue logo" src="./assets/logo.png">
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <!-- <StartedPage msg="Welcome to Your Vue.js App"/> -->
     <!-- footer -->
     <div class="footer">
       <div class="d-flex align-items-center justify-content-between" style="height: 100%;">
@@ -43,12 +90,12 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+import StartedPage from './components/StartedPage.vue'
 
 export default {
   name: 'app',
   components: {
-    // HelloWorld
+    StartedPage
   },
   data() {
     return {
@@ -69,6 +116,10 @@ export default {
 </script>
 
 <style>
+body{
+    background-color: #31313a!important;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -89,14 +140,26 @@ export default {
     font-stretch: extra-expanded;
 }
 #app #about .name .desc p{
-    color: #a2a2a6;
-    font-size: 13px;
+    color: #b4b4b4;
+    font-weight: 400;
+    font-size: 1em;
 }
 #app .vertical{
   display: table-cell !important;
   vertical-align: middle !important;
 }
-
+/* arrow */
+#app #arrowDown{
+  position: absolute;
+  bottom: 100px;
+  padding: 6px;
+  border: 3px solid white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+}
 /* footer */
 
 #app .footer{
@@ -122,7 +185,7 @@ export default {
   vertical-align: middle;
 }
 #app .footer .icons:hover{
-  color: #f26b38;
+  color: #f5e550;
   transition-duration: 0.5s;
   transform: scale(1.3);
   padding: 5px;
