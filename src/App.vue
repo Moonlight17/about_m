@@ -27,10 +27,10 @@
           <p class="year">© 2021</p>
         </div>
         <div class="p-1 text-muted vertical">
-          <font-awesome-icon icon="fa-brands fa-github" class="icons"/>
-          <font-awesome-icon icon="fa-brands fa-linkedin" class="icons"/>
-          <font-awesome-icon icon="fa-brands fa-facebook" class="icons"/>
-          <font-awesome-icon icon="fa-brands fa-instagram" class="icons"/>
+          <a target="blank" href="https://github.com/Moonlight17"><font-awesome-icon icon="fa-brands fa-github" class="icons"/></a>
+          <a target="blank" href="https://www.linkedin.com/in/moonlight1790"><font-awesome-icon icon="fa-brands fa-linkedin" class="icons"/></a>
+          <a target="blank" href="https://www.facebook.com/profile.php?id=100015795815781"><font-awesome-icon icon="fa-brands fa-facebook" class="icons"/></a>
+          <a target="blank" href="https://www.instagram.com/moonlight1790/"><font-awesome-icon icon="fa-brands fa-instagram" class="icons"/></a>
         </div>
       </div>
     </div>
