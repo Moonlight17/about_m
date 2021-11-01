@@ -58,6 +58,7 @@ export default {
   },
   mounted(){
     // alert(document.documentElement.clientHeight);
+    // document.title = "Edit Case " + this.name;
   },
   computed: {
     heightAbout(){
