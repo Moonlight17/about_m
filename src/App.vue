@@ -6,15 +6,15 @@
         </div>
       <a href="#" id="arrowDown"><font-awesome-icon icon="fa-solid fa-arrow-down" /></a>
     </div>
-    <div id="resume" class="align-self-start position-relative" :style="{'min-height': 'calc('`${heightAbout}px`,' / 3')}">
+    <div id="resume" class="align-self-start position-relative" :style="{'min-height': `${heightAbout}px`}">
         <Resume :me="me"/>
     </div>
-    <div id="education" class="align-self-start position-relative" :style="{'min-height': `${heightAbout}px`}">
-        <Education :me="me"/>
+    <div id="education" class="align-self-start position-relative" :style="{'min-height': `${calcEduc}px`}">
+        <Education :edu="me.edu"/>
     </div>
-    <div id="work" class="align-self-start position-relative" :style="{'min-height': `${heightAbout}px`}">
+    <!-- <div id="work" class="align-self-start position-relative" :style="{'min-height': `${heightAbout}px`}">
         <Work :me="me"/>
-    </div>
+    </div> -->
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <StartedPage msg="Welcome to Your Vue.js App"/> -->
     <div id="ololo">
@@ -38,11 +38,11 @@
 </template>
 
 <script>
-import StartedPage from './components/StartedPage.vue';
-import Resume from './components/Resume.vue';
-import Education from './components/Education.vue';
-import Work from './components/Work.vue';
-import Footer from './components/footer.vue';
+import StartedPage  from './components/StartedPage.vue';
+import Resume       from './components/resume.vue';
+import Education    from './components/education.vue';
+// import Work         from './components/work.vue';
+import Footer       from './components/footer.vue';
 
 export default {
   name: 'app',
@@ -50,7 +50,7 @@ export default {
     StartedPage,
     Resume,
     Education,
-    Work,
+    // Work,
     Footer
   },
   data() {
@@ -62,7 +62,25 @@ export default {
         specialization: 'DevOps Engineer',
         city: 'Moscow',
         country: 'Russia',
-        email: 'Moonlight234@yandex.ru'
+        email: 'Moonlight234@yandex.ru',
+        edu:[
+          {
+            id: 0,
+            title: 'Московский государственный технический университет им. Н. Э. Баумана',
+            degree: 'Бакалавр',
+            period: '2015 - 2019',
+            description: 'Факультет "Информатика и системы управления"; Кафедра "Системы обработки информации и управления"',
+            gpa: 4.81,
+          },
+          {
+            id: 1,
+            title: 'Московский государственный технический университет им. Н. Э. Баумана',
+            degree: 'Магистр',
+            period: '2019 - 2021',
+            description: 'Факультет "Информатика и системы управления"; Кафедра "Системы обработки информации и управления"',
+            gpa: 4.89,
+          },
+        ],
       },
       
       desc: 'My name is Sergei, I am a DevOps Engineer and you are on my webpage.',
@@ -76,6 +94,9 @@ export default {
   computed: {
     heightAbout(){
       return document.documentElement.clientHeight
+    },
+    calcEduc(){
+      return document.documentElement.clientHeight/10
     }
   },
 }
