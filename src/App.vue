@@ -10,7 +10,7 @@
         <Resume :me="me"/>
     </div>
     <div id="education" class="align-self-start position-relative" :style="{'min-height': `${calcEduc}px`}">
-        <Education :edu="me.edu"/>
+        <Education :work="me.work" :edu="me.edu"/>
     </div>
     <!-- <div id="work" class="align-self-start position-relative" :style="{'min-height': `${heightAbout}px`}">
         <Work :me="me"/>
@@ -68,17 +68,49 @@ export default {
             id: 0,
             title: 'Московский государственный технический университет им. Н. Э. Баумана',
             degree: 'Бакалавр',
-            period: '2015 - 2019',
+            period: '2019 - 2021',
+            dateStart: new Date('2015-09-01'),
+            dateEnd: new Date('2019-06-30'),
             description: 'Факультет "Информатика и системы управления"; Кафедра "Системы обработки информации и управления"',
             gpa: 4.81,
+            category: 'Education',
           },
           {
             id: 1,
             title: 'Московский государственный технический университет им. Н. Э. Баумана',
             degree: 'Магистр',
             period: '2019 - 2021',
+            dateStart: new Date('2019-09-01'),
+            dateEnd: new Date('2021-06-30'),
             description: 'Факультет "Информатика и системы управления"; Кафедра "Системы обработки информации и управления"',
             gpa: 4.89,
+            category: 'Education',
+          },
+        ],
+        work:[
+          {
+            id: 0,
+            title: 'Astronomical Science Center',
+            dateStart: new Date('2017-07-17'),
+            dateEnd: new Date('2020-10-12'),
+            description: '* Writing programs for the needs of the organization; <br>* Writing a back-end server; <br>* Writing a front-end application; <br>* Configuring Zabbix-server/agents.',
+            category: 'Developer',
+          },
+          {
+            id: 1,
+            title: 'VTB Group',
+            dateStart: new Date('2020-10-13'),
+            dateEnd: new Date('2021-10-12'),
+            description: '* Setting up TeamCity for building and testing programs; <br>* Setting up empty virtual machines for tasks using Ansible; <br>* Writing scripts in PowerShell to upload programs to Nexus and OpenShift; <br>* Setting up infrastructure monitoring;',
+            category: 'DevOps',
+          },
+          {
+            id: 2,
+            title: 'Astronomical Science Center',
+            dateStart: new Date('2021-09-17'),
+            dateEnd: new Date('2020-10-12'),
+            description: '* Setting up TeamCity for building and testing programs; <br>* Setting up empty virtual machines for tasks using Ansible; <br>* Writing scripts in PowerShell to upload programs to Nexus and OpenShift; <br>* Setting up infrastructure monitoring;',
+            category: 'DevOps',
           },
         ],
       },

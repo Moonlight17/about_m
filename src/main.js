@@ -17,8 +17,8 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 library.add(faFacebook, faGithub, faInstagram, faLinkedin, faArrowDown);
 
 // Хронология
-// import VueTimeline from "@growthbunker/vuetimeline";
-// Vue.use(VueTimeline);
+import VueTimeline from "@growthbunker/vuetimeline";
+Vue.use(VueTimeline);
 
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
