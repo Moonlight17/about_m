@@ -14,14 +14,12 @@ import {
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-import VueScrollTo from 'vue-scrollto';
 
 library.add(faFacebook, faGithub, faInstagram, faLinkedin, faArrowDown);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 
 
-Vue.use(VueScrollTo)
 Vue.config.productionTip = false
 
 new Vue({
