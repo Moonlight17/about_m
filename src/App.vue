@@ -12,6 +12,9 @@
     <div id="education" class="align-self-start position-relative" :style="{'min-height': `${calcEduc}px`}">
         <Education :work="me.work" :edu="me.edu"/>
     </div>
+    <div id="education" class="align-self-start position-relative" :style="{'min-height': `${calcEduc}px`}">
+        <Experience :data="me"/>
+    </div>
     <!-- <div id="work" class="align-self-start position-relative" :style="{'min-height': `${heightAbout}px`}">
         <Work :me="me"/>
     </div> -->
@@ -38,10 +41,10 @@
 </template>
 
 <script>
-import StartedPage  from './components/StartedPage.vue';
+import StartedPage  from './components/started_page.vue';
 import Resume       from './components/resume.vue';
-import Education    from './components/education.vue';
-// import Work         from './components/work.vue';
+import Education    from './components/education_work.vue';
+import Experience    from './components/experience.vue';
 import Footer       from './components/footer.vue';
 
 export default {
@@ -50,8 +53,9 @@ export default {
     StartedPage,
     Resume,
     Education,
+    Experience
     // Work,
-    Footer
+    Footer,
   },
   data() {
     return {
