@@ -53,7 +53,7 @@ export default {
     StartedPage,
     Resume,
     Education,
-    Experience
+    Experience,
     // Work,
     Footer,
   },
@@ -77,7 +77,7 @@ export default {
             dateEnd: new Date('2019-06-30'),
             description: 'Факультет "Информатика и системы управления"; Кафедра "Системы обработки информации и управления"',
             gpa: 4.81,
-            category: 'Education',
+            category: 'Education BMSTU',
           },
           {
             id: 1,
@@ -88,7 +88,7 @@ export default {
             dateEnd: new Date('2021-06-30'),
             description: 'Факультет "Информатика и системы управления"; Кафедра "Системы обработки информации и управления"',
             gpa: 4.89,
-            category: 'Education',
+            category: 'Education BMSTU',
           },
         ],
         work:[

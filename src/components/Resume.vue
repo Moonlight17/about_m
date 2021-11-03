@@ -38,12 +38,6 @@
                 </div>
             </div>
         </div>
-        <div id="education">
-            
-        </div>
-        <div id="work">
-            
-        </div>
     </div>
 </template>
 
