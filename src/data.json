@@ -172,7 +172,7 @@
             "Develop":[
                 {
                     "id": 0,
-                    "title": "Python / Django",
+                    "title": "Python, Django",
                     "level": 10,
                     "favirite": "true"
                 },
@@ -184,19 +184,25 @@
                 },
                 {
                     "id": 2,
-                    "title": "JS /Vue.js",
+                    "title": "JS, Vue.js",
                     "level": 10,
                     "favirite": "true"
                 },
                 {
                     "id": 3,
-                    "title": "git",
+                    "title": "GitHub",
                     "level": 10,
                     "favirite": "true"
                 },
                 {
                     "id": 4,
-                    "title": "PostgreSQL / MySQL",
+                    "title": "PostgreSQL",
+                    "level": 10,
+                    "favirite": "true"
+                },
+                {
+                    "id": 4,
+                    "title": "MySQL",
                     "level": 10,
                     "favirite": "true"
                 },
