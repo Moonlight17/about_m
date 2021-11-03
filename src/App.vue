@@ -2,7 +2,7 @@
   <div id="app" class="back" style="">
     <div id="about" class="align-self-start position-relative" :style="{'min-height': `${heightAbout}px`}">
         <div class="position-absolute top-50 start-50 translate-middle name">
-            <StartedPage :name="me.name" :firstName="me.firstName" :desc="desc"/>
+            <StartedPage :name="me.name" :firstName="me.firstName" :desc="me.desc"/>
         </div>
       <a href="#" id="arrowDown"><font-awesome-icon icon="fa-solid fa-arrow-down" /></a>
     </div>
@@ -13,7 +13,7 @@
         <Education :work="me.work" :edu="me.edu"/>
     </div>
     <div id="education" class="align-self-start position-relative" :style="{'min-height': `${calcEduc}px`}">
-        <Experience :data="me"/>
+        <Skills :data="me.skills[0]"/>
     </div>
     <!-- <div id="work" class="align-self-start position-relative" :style="{'min-height': `${heightAbout}px`}">
         <Work :me="me"/>
@@ -21,14 +21,7 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <StartedPage msg="Welcome to Your Vue.js App"/> -->
     <div id="ololo">
-      <h1>TEST</h1>
-      <h1>TEST</h1>
-      <h1>TEST</h1>
-      <h1>TEST</h1>
-      <h1>TEST</h1>
-      <h1>TEST</h1>
-      <h1>TEST</h1>
-      <h1>TEST</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p>
     </div>
     <!-- footer -->
     <Footer />
@@ -44,8 +37,10 @@
 import StartedPage  from './components/started_page.vue';
 import Resume       from './components/resume.vue';
 import Education    from './components/education_work.vue';
-import Experience    from './components/experience.vue';
+import Skills    from './components/skills.vue';
 import Footer       from './components/footer.vue';
+
+import json from './data.json'
 
 export default {
   name: 'app',
@@ -53,73 +48,13 @@ export default {
     StartedPage,
     Resume,
     Education,
-    Experience,
+    Skills,
     // Work,
     Footer,
   },
   data() {
     return {
-      me:{
-        firstName: 'Serov',
-        name: 'Sergei',
-        age: 23,
-        specialization: 'DevOps Engineer',
-        city: 'Moscow',
-        country: 'Russia',
-        email: 'Moonlight234@yandex.ru',
-        edu:[
-          {
-            id: 0,
-            title: 'Московский государственный технический университет им. Н. Э. Баумана',
-            degree: 'Бакалавр',
-            period: '2019 - 2021',
-            dateStart: new Date('2015-09-01'),
-            dateEnd: new Date('2019-06-30'),
-            description: 'Факультет "Информатика и системы управления"; Кафедра "Системы обработки информации и управления"',
-            gpa: 4.81,
-            category: 'Education BMSTU',
-          },
-          {
-            id: 1,
-            title: 'Московский государственный технический университет им. Н. Э. Баумана',
-            degree: 'Магистр',
-            period: '2019 - 2021',
-            dateStart: new Date('2019-09-01'),
-            dateEnd: new Date('2021-06-30'),
-            description: 'Факультет "Информатика и системы управления"; Кафедра "Системы обработки информации и управления"',
-            gpa: 4.89,
-            category: 'Education BMSTU',
-          },
-        ],
-        work:[
-          {
-            id: 0,
-            title: 'Astronomical Science Center',
-            dateStart: new Date('2017-07-17'),
-            dateEnd: new Date('2020-10-12'),
-            description: '* Writing programs for the needs of the organization; <br>* Writing a back-end server; <br>* Writing a front-end application; <br>* Configuring Zabbix-server/agents.',
-            category: 'Developer',
-          },
-          {
-            id: 1,
-            title: 'VTB Group',
-            dateStart: new Date('2020-10-13'),
-            dateEnd: new Date('2021-10-12'),
-            description: '* Setting up TeamCity for building and testing programs; <br>* Setting up empty virtual machines for tasks using Ansible; <br>* Writing scripts in PowerShell to upload programs to Nexus and OpenShift; <br>* Setting up infrastructure monitoring;',
-            category: 'DevOps',
-          },
-          {
-            id: 2,
-            title: 'Astronomical Science Center',
-            dateStart: new Date('2021-09-17'),
-            dateEnd: new Date('2020-10-12'),
-            description: '* Setting up TeamCity for building and testing programs; <br>* Setting up empty virtual machines for tasks using Ansible; <br>* Writing scripts in PowerShell to upload programs to Nexus and OpenShift; <br>* Setting up infrastructure monitoring;',
-            category: 'DevOps',
-          },
-        ],
-      },
-      
-      desc: 'My name is Sergei, I am a DevOps Engineer and you are on my webpage.',
+      me: json,
     }
   },
   mounted(){

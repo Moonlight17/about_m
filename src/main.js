@@ -20,6 +20,10 @@ library.add(faFacebook, faGithub, faInstagram, faLinkedin, faArrowDown);
 import VueTimeline from "@growthbunker/vuetimeline";
 Vue.use(VueTimeline);
 
+// // Скрытие таблицы
+// import VShowSlide from 'v-show-slide'
+// Vue.use(VShowSlide)
+
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 

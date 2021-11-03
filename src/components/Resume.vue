@@ -60,13 +60,15 @@ export default {
 }
 #title{
     text-align: left;
+    font-size: 1.4em;
 }
 #data{
     text-align: left;
-    font-size: 1.0em;
+    font-size: 1em;
 }
 .desc{
     text-align: justify;
+    font-size: 1em;
 }
 #data span.data{
     color: #f26b38;

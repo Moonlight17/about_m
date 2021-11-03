@@ -1,6 +1,6 @@
 <template>
     <div id="educ" class="row">
-        <h1>EDUCATION</h1>  <h1>Work</h1>
+        <p id="title">Образование и опыт работы</p>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
             Column
             <vue-timeline-update v-for="i in edu" :key="i.id"
@@ -43,6 +43,9 @@ export default {
           color: '#b4b4b4'
       }
   },
+  created(){
+    this.convert();
+  },
   mounted(){
     // alert(document.documentElement.clientHeight);
     // document.title = "Edit Case " + this.name;
@@ -60,6 +63,23 @@ export default {
         for(i = 0; (themeChange = x[i]); i++) {
             themeChange.style.color = this.color;
         }
+      },
+      convert(){
+        // console.log(this.edu);
+        for(let i in this.work){
+          for(let j in this.work[i]){
+            if (j == 'dateStart' || j == 'dateEnd'){
+              this.work[i][j] = new Date(this.work[i][j]);
+            }
+          }
+        }
+        for(let i in this.edu){
+          for(let j in this.edu[i]){
+            if (j == 'dateStart' || j == 'dateEnd'){
+              this.edu[i][j] = new Date(this.edu[i][j]);
+            }
+          }
+        }
       }
   }
 }
@@ -67,8 +87,15 @@ export default {
 
 <style scoped>
 #educ{
-    color: #b4b4b4;
-    font-size: 10px;
+  color: #b4b4b4;
+  /* font-size: 1.2em; */
+  position: relative;
+  width: 100%;
+  padding: 0 80px 150px 80px;
+}
+#title{
+    text-align: left;
+    font-size: 1.4em;
 }
 [class^="gb-"]:not(.gb-base-icon) {
   font-family: Arial, Helvetica, sans-serif !important;

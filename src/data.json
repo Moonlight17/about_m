@@ -1,0 +1,213 @@
+{
+    "firstName": "Serov",
+    "name": "Sergei",
+    "age": 23,
+    "specialization": "DevOps Engineer",
+    "city": "Moscow",
+    "country": "Russia",
+    "email": "Moonlight234@yandex.ru",
+    "desc": "My name is Sergei, I am a DevOps Engineer and you are on my webpage.",
+    "edu":[
+        {
+            "id": 0,
+            "title": "Московский государственный технический университет им. Н. Э. Баумана",
+            "degree": "Бакалавр",
+            "period": "2019 - 2021",
+            "dateStart": "2015-09-01T00:00:00Z",
+            "dateEnd": "2019-06-30T00:00:00Z",
+            "description": "Факультет 'Информатика и системы управления'; Кафедра 'Системы обработки информации и управления'",
+            "gpa": 4.81,
+            "category": "Education BMSTU"
+        },
+        {
+            "id": 1,
+            "title": "Московский государственный технический университет им. Н. Э. Баумана",
+            "degree": "Магистр",
+            "period": "2019 - 2021",
+            "dateStart": "2019-09-01T00:00:00Z",
+            "dateEnd": "2021-06-30T00:00:00Z",
+            "description": "Факультет 'Информатика и системы управления'; Кафедра 'Системы обработки информации и управления'",
+            "gpa": 4.89,
+            "category": "Education BMSTU"
+        }
+    ],
+    "work":[
+        {
+            "id": 0,
+            "title": "Astronomical Science Center",
+            "dateStart": "2017-07-17T00:00:00Z",
+            "dateEnd": "2020-07-17T00:00:00Z",
+            "description": "* Writing programs for the needs of the organization; <br>* Writing a back-end server; <br>* Writing a front-end application; <br>* Configuring Zabbix-server/agents.",
+            "category": "Developer"
+        },
+        {
+            "id": 1,
+            "title": "VTB Group",
+            "dateStart": "2020-10-13T00:00:00Z",
+            "dateEnd": "2021-10-12T00:00:00Z",
+            "description": "* Setting up TeamCity for building and testing programs; <br>* Setting up empty virtual machines for tasks using Ansible; <br>* Writing scripts in PowerShell to upload programs to Nexus and OpenShift; <br>* Setting up infrastructure monitoring;",
+            "category": "DevOps"
+        },
+        {
+            "id": 2,
+            "title": "Astronomical Science Center",
+            "dateStart": "2021-09-17T00:00:00Z",
+            "dateEnd": "2020-10-12T00:00:00Z",
+            "description": "* Setting up TeamCity for building and testing programs; <br>* Setting up empty virtual machines for tasks using Ansible; <br>* Writing scripts in PowerShell to upload programs to Nexus and OpenShift; <br>* Setting up infrastructure monitoring;",
+            "category": "DevOps"
+        }
+    ],
+    "skills":[
+        {
+            "DevOps":[
+                {   
+                    "id": 0,
+                    "title": "GitHub",
+                    "level": 4,
+                    "favirite": "true"
+                },
+                {   
+                    "id": 1,
+                    "title": "GitLab",
+                    "level": 8,
+                    "favirite": "true"
+                },
+                {   
+                    "id": 2,
+                    "title": "BitBucket",
+                    "level": 10,
+                    "favirite": "true"
+                },
+                {   
+                    "id": 3,
+                    "title": "TeamCity",
+                    "level": 10,
+                    "favirite": "true"
+                },
+                {   
+                    "id": 4,
+                    "title": "Jenkins",
+                    "level": 10,
+                    "favirite": "true"
+                },
+                {   
+                    "id": 5,
+                    "title": "Ansible",
+                    "level": 1,
+                    "favirite": "true"
+                },
+                {   
+                    "id": 6,
+                    "title": "Terraform",
+                    "level": 4,
+                    "favirite": "true"
+                },
+                {   
+                    "id": 7,
+                    "title": "Docker",
+                    "level": 3,
+                    "favirite": "true"
+                },
+                {   
+                    "id": 8,
+                    "title": "Kubernetes",
+                    "level": 1,
+                    "favirite": "true"
+                },
+                {   
+                    "id": 9,
+                    "title": "AWS",
+                    "level": 10,
+                    "favirite": "true"
+                },
+                {   
+                    "id": 10,
+                    "title": "Google Cloud",
+                    "level": 10,
+                    "favirite": "true"
+                },
+                {   
+                    "id": 11,
+                    "title": "OpenShift",
+                    "level": 10,
+                    "favirite": "true"
+                },
+                {   
+                    "id": 12,
+                    "title": "Fluentd",
+                    "level": 10,
+                    "favirite": "true"
+                },
+                {   
+                    "id": 13,
+                    "title": "Prometheus",
+                    "level": 10,
+                    "favirite": "true"
+                },
+                {   
+                    "id": 14,
+                    "title": "Kibana",
+                    "level": 10,
+                    "favirite": "true"
+                },
+                {   
+                    "id": 15,
+                    "title": "ElasticSearch",
+                    "level": 10,
+                    "favirite": "true"
+                },
+                {   
+                    "id": 16,
+                    "title": "Zabbix",
+                    "level": 10,
+                    "favirite": "true"
+                },
+                {   
+                    "id": 17,
+                    "title": "SonarQube",
+                    "level": 10,
+                    "favirite": "true"
+                }
+            ],
+            "Develop":[
+                {
+                    "id": 0,
+                    "title": "Python / Django",
+                    "level": 10,
+                    "favirite": "true"
+                },
+                {
+                    "id": 1,
+                    "title": "HTML, CSS",
+                    "level": 10,
+                    "favirite": "true"
+                },
+                {
+                    "id": 2,
+                    "title": "JS /Vue.js",
+                    "level": 10,
+                    "favirite": "true"
+                },
+                {
+                    "id": 3,
+                    "title": "git",
+                    "level": 10,
+                    "favirite": "true"
+                },
+                {
+                    "id": 4,
+                    "title": "PostgreSQL / MySQL",
+                    "level": 10,
+                    "favirite": "true"
+                },
+                {
+                    "id": 5,
+                    "title": "C / C++",
+                    "level": 10,
+                    "favirite": "true"
+                }
+            ]
+        }
+        
+    ]
+}
