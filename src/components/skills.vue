@@ -63,7 +63,7 @@ export default {
     margin: 0 auto;
     font-size: 1.2em;
     padding: 0;
-    padding: 0 80px 0px 77px;
+    padding: 0 7%;
     border: 2px solid #b4b4b4;
 }
 .skills{
