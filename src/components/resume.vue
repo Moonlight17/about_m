@@ -47,7 +47,24 @@ export default {
   name: 'resume',
   props: {
     me: Object
-  }
+  },
+  data() {
+      return {
+          
+      }
+  },
+  mounted(){
+      this.convert();
+  },
+  methods:{
+      convert(){
+        let age = new Date(this.me.age);
+        let check = new Date();
+        let milliDays = 1000*60*60*24;
+        let AgeInDays = (check - age)/milliDays;
+        this.me.age = Math.floor(AgeInDays/365) + " y.o.";
+      }
+  },
 }
 </script>
 
