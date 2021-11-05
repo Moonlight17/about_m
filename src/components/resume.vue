@@ -44,7 +44,7 @@
 
 <script>
 export default {
-  name: 'Resume',
+  name: 'resume',
   props: {
     me: Object
   }

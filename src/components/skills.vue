@@ -1,7 +1,7 @@
 <template>
     <div id="skills" class="skills row">
       <p id="title">Навыки</p>
-        <div class="com-sm-12 col-lg-6">
+        <div class="com-sm-12 col-lg-6 column">
           <p class="mini_title" @click="Height('DevOps')">DevOps</p>
           <div id="DevOps" class="DevOps">
             <div v-for="i in data.DevOps" :key="i.title" class="skill">
@@ -12,7 +12,7 @@
             </div>
           </div>
         </div>
-        <div class="com-sm-12 col-lg-6">
+        <div class="com-sm-12 col-lg-6 column">
           <p class="mini_title" @click="Height('Develop')">Develop</p>
           <div id="Develop" class="Develop">
             <div v-for="i in data.Develop" :key="i.title" class="skill">
@@ -52,7 +52,7 @@ export default {
   color: #b4b4b4;
   position: relative;
   width: 100%;
-  padding: 0 80px 150px 80px;
+  padding: 0 8%;
 }
 #title{
     text-align: left;
@@ -71,6 +71,9 @@ export default {
   position: relative;
   width: 100%;
   padding: 0 80px 150px 80px;
+}
+.column{
+  margin-bottom: 10%;
 }
 .skill{
   text-align: left;
