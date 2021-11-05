@@ -3,7 +3,7 @@
     <div class="footer">
       <div class="d-flex align-items-center justify-content-between" style="height: 100%;">
         <div class="p-1 text-muted vertical">
-          <p class="year">© 2021</p>
+          <p class="year">© {{year}}</p>
         </div>
         <div class="p-1 text-muted vertical">
           <a target="blank" href="https://github.com/Moonlight17"><font-awesome-icon icon="fa-brands fa-github" class="icons"/></a>
@@ -14,6 +14,20 @@
       </div>
     </div>
 </template>
+<script>
+export default {
+  name: 'Footer',
+  data() {
+    return {
+      year: 2021,
+    }
+  },
+  mounted(){
+    let newDate = new Date();
+    this.year = newDate.getFullYear();
+  }
+}
+</script>
 <style>
 /* footer */
 
