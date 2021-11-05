@@ -4,7 +4,7 @@
         <div class="position-absolute top-50 start-50 translate-middle name">
             <StartedPage :name="me.name" :firstName="me.firstName" :desc="me.desc"/>
         </div>
-      <a href="#" id="arrowDown"><font-awesome-icon icon="fa-solid fa-arrow-down" /></a>
+      <a href="#resume" id="arrowDown"><font-awesome-icon icon="fa-solid fa-arrow-down" /></a>
     </div>
     <div id="resume" class="align-self-start position-relative" :style="{'min-height': `${heightAbout}px`}">
         <Resume :me="me"/>
@@ -12,14 +12,12 @@
     <div id="education" class="align-self-start position-relative" :style="{'min-height': `${calcEduc}px`}">
         <Education :work="me.work" :edu="me.edu"/>
     </div>
-    <div id="education" class="align-self-start position-relative" :style="{'min-height': `${calcEduc}px`}">
+    <div id="skills" class="align-self-start position-relative" :style="{'min-height': `${calcEduc}px`}">
         <Skills :data="me.skills[0]"/>
     </div>
-    <!-- <div id="work" class="align-self-start position-relative" :style="{'min-height': `${heightAbout}px`}">
-        <Work :me="me"/>
-    </div> -->
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <!-- <StartedPage msg="Welcome to Your Vue.js App"/> -->
+    <div id="soft" class="align-self-start position-relative" :style="{'min-height': `${calcEduc}px`}">
+        <Soft :data="me.soft"/>
+    </div>
     <div id="ololo">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus velit libero, numquam quam aperiam illo dolorem. Ea aliquam libero culpa quod sit illo nobis. Facere quibusdam accusamus libero ipsum dolore?</p>
     </div>
@@ -34,11 +32,12 @@
 </template>
 
 <script>
-import StartedPage  from './components/started_page.vue';
-import Resume       from './components/resume.vue';
-import Education    from './components/education_work.vue';
-import Skills    from './components/skills.vue';
-import Footer       from './components/footer.vue';
+import StartedPage  from '@/components/started_page.vue';
+import Resume       from '@/components/resume.vue';
+import Education    from '@/components/education_work.vue';
+import Skills       from '@/components/skills.vue';
+import Soft         from '@/components/soft.vue';
+import Footer       from '@/components/footer.vue';
 
 import json from './data.json'
 
@@ -49,6 +48,7 @@ export default {
     Resume,
     Education,
     Skills,
+    Soft,
     // Work,
     Footer,
   },
