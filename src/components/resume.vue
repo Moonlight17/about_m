@@ -1,5 +1,5 @@
 <template>
-    <div id="me" class="position-absolute top-0 start-50 translate-middle-x">
+    <div id="me" class="me">
         <p id="title">ОБО МНЕ</p>
         <div class="clearfix desc">
             <img src="../assets/logo.png" class="col-lg-5 float-md-start mb-3 ms-md-3">
@@ -73,7 +73,7 @@ export default {
     color: red;
     position: relative;
     width: 100%;
-    padding: 0 80px 150px 80px;
+    padding: 0 80px 10% 80px;
 }
 #title{
     text-align: left;
