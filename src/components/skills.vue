@@ -82,6 +82,8 @@ export default {
 .skill p{
   padding-bottom: 0px;
   margin-bottom: 0;
+  width: 100%;
+  text-align: right;
 }
 .progress-bar{
   background-color: #f26b38;
@@ -90,9 +92,11 @@ export default {
   font-size: 1em;
   font-variation-settings: 'wght' 600, 'wdth' 50;
   display: inline-block;
-  width: 9em;
+  float: left;
 }
 .year{
+  text-align: right;
+  padding-right: 0%;
 }
 .progress{
   height: 0.17em;
