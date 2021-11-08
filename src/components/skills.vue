@@ -2,7 +2,8 @@
     <div id="skills" class="skills row">
       <p id="title">Навыки</p>
         <div class="com-sm-12 col-lg-6 column">
-          <p class="mini_title" @click="Height('DevOps')">DevOps</p>
+          <!-- <p class="mini_title" @click="Height('DevOps')">DevOps</p> -->
+          <p class="mini_title">DevOps</p>
           <div id="DevOps" class="DevOps">
             <div v-for="i in data.DevOps" :key="i.title" class="skill">
               <p><span class="tech">{{i.title}} </span><span class="year">({{i.level}} year)</span></p>
@@ -13,7 +14,8 @@
           </div>
         </div>
         <div class="com-sm-12 col-lg-6 column">
-          <p class="mini_title" @click="Height('Develop')">Develop</p>
+          <!-- <p class="mini_title" @click="Height('Develop')">Develop</p> -->
+          <p class="mini_title">Develop</p>
           <div id="Develop" class="Develop">
             <div v-for="i in data.Develop" :key="i.title" class="skill">
               <p><span class="tech">{{i.title}} </span><span class="year">({{i.level}} year)</span></p>
