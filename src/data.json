@@ -241,7 +241,20 @@
         {
             "title": "Стрессоустойчивость",
             "level": 10
+        }   
+    ],
+    "courses":[
+        {
+            "title": "C++",
+            "path": "CPP.png"
+        },
+        {
+            "title": "DevOps",
+            "path": "DevOps.png"
+        },
+        {
+            "title": "AutoDesk Maya",
+            "path": "Maya.png"
         }
-        
     ]
 }
