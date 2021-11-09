@@ -2,7 +2,7 @@
     <div id="me" class="me">
         <p id="title">ABOUT MYSELF</p>
         <div class="clearfix desc">
-            <img src="../assets/logo.png" class="col-lg-5 float-md-start mb-3 ms-md-3">
+            <img id="photo" :src="publicPath+'photo.jpg'" class="col-lg-5 float-md-start mb-3 ms-md-3">
 
             <p v-for="item in me.resume" :key="item.id">
                 {{item.text}}
@@ -42,6 +42,7 @@ export default {
   },
   data() {
       return {
+        publicPath: process.env.BASE_URL
           
       }
   },
@@ -71,6 +72,14 @@ export default {
     text-align: left;
     font-size: 1.4em;
 }
+img#photo{
+    padding: 0;
+    max-width: 200px;
+    border-radius: 7%;
+    /* border: 2px solid red; */
+    zoom: 100%;
+    margin: 10px;
+}
 #data{
     text-align: left;
     font-size: 1em;
@@ -85,9 +94,5 @@ export default {
 #data .info{
     color: #b4b4b4;
     text-decoration: none;
-}
-#me img{
-    max-width: 200px;
-    padding: 10px;
 }
 </style>
