@@ -7,26 +7,40 @@
     "country": "Russia",
     "email": "Moonlight234@yandex.ru",
     "desc": "My name is Sergei, I am a DevOps Engineer and you are on my webpage.",
+    "resume":[
+        {
+            "id":0,
+            "text":"I am a DevOps engineer with 4 years of experience (1 year: DevOps + 3 years: Backend developer). At the moment I am engaged in professional development in the direction of DevOps."
+        },
+        {
+            "id":1,
+            "text":"I have hands-on experience in setting up a Pipeline for sourcing using TeamCity and Jenkins; writing scripts to publish artifacts to Nexus and DockerHub; building containers with Docker (Docker-compose); setting up virtual machines using Ansible, a little practical experience with cloud platforms using Terraform for Google Cloud Platform, Amazon Web Services, Yandex Cloud; configured monitoring with Zabbix, Fluentd & Elastic Search & Kibana, Prometheus & Node-Exporter & Alertmanager & Grafana."
+        },
+        {
+            "id":2,
+            "text":"I plan to develop in this direction further, improving my current knowledge and studying new technologies. I plan to receive my first AWS certification in 2022."
+        }
+    ],
     "edu":[
         {
             "id": 0,
-            "title": "Московский государственный технический университет им. Н. Э. Баумана",
-            "degree": "Бакалавр",
+            "title": "Bauman Moscow State Technical University",
+            "degree": "Bachelor",
             "period": "2019 - 2021",
             "dateStart": "2015-09-01T00:00:00Z",
             "dateEnd": "2019-06-30T00:00:00Z",
-            "description": "Факультет 'Информатика и системы управления'; Кафедра 'Системы обработки информации и управления'",
+            "description": "Faculty of Informatics and Control Systems; Department of Information Processing and Management Systems",
             "gpa": 4.81,
             "category": "BMSTU"
         },
         {
             "id": 1,
-            "title": "Московский государственный технический университет им. Н. Э. Баумана",
-            "degree": "Магистр",
+            "title": "Bauman Moscow State Technical University",
+            "degree": "Master",
             "period": "2019 - 2021",
             "dateStart": "2019-09-01T00:00:00Z",
             "dateEnd": "2021-06-30T00:00:00Z",
-            "description": "Факультет 'Информатика и системы управления'; Кафедра 'Системы обработки информации и управления'",
+            "description": "Faculty of Informatics and Control Systems; Department of Information Processing and Management Systems",
             "gpa": 4.89,
             "category": "BMSTU"
         }
@@ -61,111 +75,115 @@
         {
             "DevOps":[
                 {   
-                    "id": 0,
-                    "title": "GitHub",
-                    "level": 4,
-                    "favirite": "true"
-                },
-                {   
-                    "id": 1,
-                    "title": "GitLab",
-                    "level": 8,
-                    "favirite": "true"
-                },
-                {   
                     "id": 2,
                     "title": "BitBucket",
-                    "level": 10,
+                    "level": 1,
+                    "dateStart":"2021-05-01T00:00:00Z",
                     "favirite": "true"
                 },
                 {   
                     "id": 3,
                     "title": "TeamCity",
-                    "level": 10,
+                    "level": 1,
+                    "dateStart":"2021-05-01T00:00:00Z",
                     "favirite": "true"
                 },
                 {   
                     "id": 4,
                     "title": "Jenkins",
-                    "level": 10,
+                    "level": 1,
+                    "dateStart":"2021-06-12T00:00:00Z",
                     "favirite": "true"
                 },
                 {   
                     "id": 5,
                     "title": "Ansible",
                     "level": 1,
+                    "dateStart":"2021-05-17T00:00:00Z",
                     "favirite": "true"
                 },
                 {   
                     "id": 6,
                     "title": "Terraform",
-                    "level": 4,
+                    "level": 1,
+                    "dateStart":"2021-06-02T00:00:00Z",
                     "favirite": "true"
                 },
                 {   
                     "id": 7,
                     "title": "Docker",
-                    "level": 3,
+                    "level": 1,
+                    "dateStart":"2021-04-01T00:00:00Z",
                     "favirite": "true"
                 },
                 {   
                     "id": 8,
                     "title": "Kubernetes",
                     "level": 1,
+                    "dateStart":"2021-07-01T00:00:00Z",
                     "favirite": "true"
                 },
                 {   
                     "id": 9,
                     "title": "AWS",
-                    "level": 10,
+                    "level": 1,
+                    "dateStart":"2021-07-01T00:00:00Z",
                     "favirite": "true"
                 },
                 {   
                     "id": 10,
                     "title": "Google Cloud",
-                    "level": 10,
+                    "level": 1,
+                    "dateStart":"2021-07-01T00:00:00Z",
                     "favirite": "true"
                 },
                 {   
                     "id": 11,
                     "title": "OpenShift",
-                    "level": 10,
+                    "level": 1,
+                    "dateStart":"2021-06-20T00:00:00Z",
                     "favirite": "true"
                 },
                 {   
                     "id": 12,
                     "title": "Fluentd",
-                    "level": 10,
+                    "level": 1,
+                    "dateStart":"2021-05-13T00:00:00Z",
                     "favirite": "true"
                 },
                 {   
                     "id": 13,
                     "title": "Prometheus",
-                    "level": 10,
+                    "level": 1,
+                    "dateStart":"2021-05-14T00:00:00Z",
                     "favirite": "true"
                 },
                 {   
                     "id": 14,
                     "title": "Kibana",
-                    "level": 10,
+                    "level": 1,
+                    "dateStart":"2021-05-14T00:00:00Z",
                     "favirite": "true"
                 },
                 {   
                     "id": 15,
                     "title": "ElasticSearch",
-                    "level": 10,
+                    "level": 1,
+                    "dateStart":"2021-05-14T00:00:00Z",
                     "favirite": "true"
                 },
                 {   
                     "id": 16,
                     "title": "Zabbix",
-                    "level": 8,
+                    "level": 2,
+                    "dateStart":"2020-09-17T00:00:00Z",
                     "favirite": "true"
                 },
                 {   
                     "id": 17,
                     "title": "SonarQube",
-                    "level": 10,
+                    "level": 1,
+                    "dateStart":"2021-06-18T00:00:00Z",
                     "favirite": "true"
                 }
             ],
@@ -173,43 +191,50 @@
                 {
                     "id": 0,
                     "title": "Python, Django",
-                    "level": 10,
+                    "level": 3,
+                    "dateStart":"2016-09-01T00:00:00Z",
                     "favirite": "true"
                 },
                 {
                     "id": 1,
                     "title": "HTML, CSS",
-                    "level": 10,
+                    "level": 4,
+                    "dateStart":"2016-09-01T00:00:00Z",
                     "favirite": "true"
                 },
                 {
                     "id": 2,
                     "title": "JS, Vue.js",
-                    "level": 10,
+                    "level": 3,
+                    "dateStart":"2017-09-01T00:00:00Z",
                     "favirite": "true"
                 },
                 {
                     "id": 3,
                     "title": "GitHub",
-                    "level": 10,
+                    "level": 3,
+                    "dateStart":"2017-09-01T00:00:00Z",
                     "favirite": "true"
                 },
                 {
                     "id": 4,
                     "title": "PostgreSQL",
-                    "level": 10,
+                    "level": 3,
+                    "dateStart":"2016-09-01T00:00:00Z",
                     "favirite": "true"
                 },
                 {
                     "id": 4,
                     "title": "MySQL",
-                    "level": 10,
+                    "level": 2,
+                    "dateStart":"2016-12-15T00:00:00Z",
                     "favirite": "true"
                 },
                 {
                     "id": 5,
                     "title": "C / C++",
-                    "level": 10,
+                    "level": 3,
+                    "dateStart":"2018-09-01T00:00:00Z",
                     "favirite": "true"
                 }
             ]
