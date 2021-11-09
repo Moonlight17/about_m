@@ -1,8 +1,7 @@
 <template>
     <div id="educ" class="row">
-        <p id="title">Образование и опыт работы</p>
+        <p id="title">Education & Work Experience</p>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
-            Column
             <vue-timeline-update v-for="i in edu" :key="i.id"
                 :date="i.dateStart"
                 :title="i.degree"
@@ -13,9 +12,7 @@
                 is-last
             />
         </div>
-        
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
-            text
             <vue-timeline-update v-for="i in work" :key="i.id"
                 :date="i.dateStart"
                 :title="i.title"
@@ -91,7 +88,7 @@ export default {
   /* font-size: 1.2em; */
   position: relative;
   width: 100%;
-  padding: 0 80px 10% 80px;
+  padding: 0 10% 10% 10%;
 }
 #title{
     text-align: left;

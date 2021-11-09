@@ -1,6 +1,6 @@
 <template>
     <div id="me" class="me">
-        <p id="title">ОБО МНЕ</p>
+        <p id="title">ABOUT MYSELF</p>
         <div class="clearfix desc">
             <img src="../assets/logo.png" class="col-lg-5 float-md-start mb-3 ms-md-3">
 
@@ -19,22 +19,22 @@
         <div id="data" class="container">
             <div class="row ">
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <p><span class="data">Имя:</span><span class="info"> {{me.name}} {{me.firstName}}</span></p>
+                    <p><span class="data">Name:</span><span class="info"> {{me.name}} {{me.firstName}}</span></p>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <p><span class="data">Возраст:</span><span class="info"> {{me.age}}</span></p>
+                    <p><span class="data">Age:</span><span class="info"> {{me.age}}</span></p>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <p><span class="data">Специальность:</span><span class="info"> {{me.specialization}}</span></p>
+                    <p><span class="data">Specialization:</span><span class="info"> {{me.specialization}}</span></p>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <p><span class="data">Страна:</span><span class="info"> {{me.country}}</span></p>
+                    <p><span class="data">Country:</span><span class="info"> {{me.country}}</span></p>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <p><span class="data">Город:</span><span class="info"> {{me.city}}</span></p>
+                    <p><span class="data">City:</span><span class="info"> {{me.city}}</span></p>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                    <p><span class="data">E-mail:</span><span class="info"> {{me.email}}</span></p>
+                    <p><span class="data">E-mail:</span><a class="info" :href="'mailto:'+me.email"> {{me.email}}</a></p>
                 </div>
             </div>
         </div>
@@ -73,7 +73,7 @@ export default {
     color: #b4b4b4;
     position: relative;
     width: 100%;
-    padding: 0 80px 10% 80px;
+    padding: 0 10% 10% 10%;
 }
 #title{
     text-align: left;
@@ -90,8 +90,9 @@ export default {
 #data span.data{
     color: #f26b38;
 }
-#data span.info{
+#data .info{
     color: #b4b4b4;
+    text-decoration: none;
 }
 #me img{
     max-width: 200px;
