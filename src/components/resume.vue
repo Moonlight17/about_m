@@ -1,10 +1,10 @@
 <template>
     <div id="me" class="me">
         <p id="title">ABOUT MYSELF</p>
-        <div class="clearfix desc">
-            <img id="photo" :src="publicPath+'photo.jpg'" class="col-lg-5 float-md-start mb-3 ms-md-3">
+        <div class="clearfix desc text-center">
+            <img id="photo" :src="publicPath+'photo.jpg'" class="float-md-start mb-3">
 
-            <p v-for="item in me.resume" :key="item.id">
+            <p id="text" v-for="item in me.resume" :key="item.id">
                 {{item.text}}
             </p>
         </div>
@@ -87,6 +87,10 @@ img#photo{
 .desc{
     text-align: justify;
     font-size: 1em;
+    margin-bottom: 30px;
+}
+#text{
+    text-align: justify!important;;
 }
 #data span.data{
     color: #f26b38;
