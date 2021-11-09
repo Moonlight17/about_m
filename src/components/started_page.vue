@@ -25,7 +25,7 @@ export default {
 p.name {
   font-family: "Baloo Tamma", Apple Chancery, Bradley Hand, Snell Roundhand, cursive;
   color: #c8efb7;
-  font-size: 80px;
+  font-size: 4.6em;
   letter-spacing: 0.2em;
   margin-top: -40px;
   text-shadow: -1px -1px 0px #31313a, 3px 3px 0px #31313a, 6px 6px 0px #f5e550;
