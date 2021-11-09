@@ -48,34 +48,8 @@ export default {
 .desc{
     text-align: justify;
     font-size: 1em;
-    /* background-color: aqua; */
 }
-/* .desc{
-    text-align: justify;
-    font-size: 1em;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-} */
-/* .certs{
-  w
-} */
 .cert{
-  /* display: flex; */
-  /* border: 3px solid red; */
-  /* width: 100%; */
-  /* display: -webkit-flex; */
-  /* display: -ms-flexbox; */
   padding: 1em;
-}
-.cert img{
-  /* max-width: 300px; */
-  /* padding: 0; */
-  /* padding: 0.7rem!important; */
-  /* margin: 0rem!important; */
 }
 </style>
