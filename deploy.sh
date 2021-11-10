@@ -18,6 +18,7 @@ git init
 git add -A
 git commit -m 'deploy'
 
+echo '*.psd' >> .gitignore
 # если вы публикуете по адресу https://<USERNAME>.github.io
 # git push -f git@github.com:Moonlight17/about_m.github.io.git master
 git push -f git@github.com:Moonlight17/about_m.git master:gh-pages
