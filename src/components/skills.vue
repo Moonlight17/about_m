@@ -130,7 +130,7 @@ export default {
   padding-right: 0%;
 }
 .progress{
-  height: 0.17em;
+  height: 0.23em;
 }
 .skill:hover .progress{
 }
