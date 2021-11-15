@@ -234,7 +234,7 @@
                     "id": 5,
                     "title": "C / C++",
                     "level": 3,
-                    "dateStart":"2018-09-01T00:00:00Z",
+                    "dateStart":"2021-09-01T00:00:00Z",
                     "favirite": "true"
                 }
             ]
@@ -244,29 +244,61 @@
 
     "soft":[
         {
-            "title": "Ответственность",
-            "level": 10
+            "text":[
+                {
+                    "id":"0",
+                    "text":"«<b>The price of greatness is responsibility.</b>» Winston Churchill."
+                },
+                {
+                    "id":"1",
+                    "text":"This phrase can sound pretentious, but I completely agree with it, because I consider that the main professional quality of a man is responsibility. Speaking about myself, I can say with no hesitation that responsibility - is one of my strongest qualities. No doubt that I am not the best developer in the world, for sure I don't know each and every aspect of DevOps technologies and etc. But I have a very high level of responsibility. If I got down to work, the work will be done, while studying the technology, so that next time there will be no difficulties if they nevertheless arise."
+                },
+                {
+                    "id":"2",
+                    "text":"Generally speaking, I can find out within myself these professional qualities:"
+                }
+            ],
+            "skills":[
+                {
+                    "title": "Communication",
+                    "level": 9
+                },
+                {
+                    "title": "Creativity",
+                    "level": 7
+                },
+                {
+                    "title": "Analytical Skills",
+                    "level": 8
+                },
+                {
+                    "title": "Time Management",
+                    "level": 9
+                },
+                {
+                    "title": "Team Work",
+                    "level": 9
+                },
+                {
+                    "title": "Adaptability",
+                    "level": 9
+                },
+                {
+                    "title": "Problem solving",
+                    "level": 9
+                }
+            ]
+        }
+    ],
+    "selfedu":[
+        {
+            "id": "0",
+            "text": "Self-education has been a big part of my life for many years. Generally speaking, a person can feel “okay” just by learning and applying one narrow stack of technologies. But I always feel the need to “look around” for exciting new technological opportunities. That is why I try to learn new technologies that I can use in my future work."
         },
         {
-            "title": "Обучаемость",
-            "level": 10
-        },
-        {
-            "title": "Способности решения",
-            "level": 10
-        },
-        {
-            "title": "Коммуникабельность",
-            "level": 10
-        },
-        {
-            "title": "Самоорганизация",
-            "level": 10
-        },
-        {
-            "title": "Стрессоустойчивость",
-            "level": 10
-        }   
+            "id": "1",
+            "text": "For self-education, I regularly use the documentation of a particular technology, deploy VMs for “experiments”, and of course I try to communicate with competent people who can suggest what should be emphasized."
+        }
     ],
     "courses":[
         {
