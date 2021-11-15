@@ -3,11 +3,12 @@
       <p id="title">SELF-EDUCATION</p>
       <div class="col-sm-12 col-xl-12">
         <div class="desc">
-          <p>Self-education is a big part of my life for many years already. Generally speaking, a man can feel himself "ok" just by learning and practicing one narrow technology stack. But I always feel need to "look around" for new interesting technology opportunities. That is why, every year I try to learn one or two new tech features, that I can use in my daily job.</p>
-          <p>My favorite resource for self-education is freecodecamp.org. This is a non-profit developer community, that shares their knowledge with other people through interactive theory courses and a great number of challenging tasks to solve.</p>
+          <p v-for="item in data" :key="item.id" v-html="item.text">
+                {{item.text}}
+            </p>
         </div>
         <div class="certs row">
-            <div v-for="item in data" :key="item.title" class="cert align-items-center col-sm-12 col-xl-4">
+            <div v-for="item in couses" :key="item.title" class="cert align-items-center col-sm-12 col-xl-4">
               <img :src="publicPath+item.path" class="img-thumbnail">
             </div>
         </div>
@@ -24,7 +25,8 @@ export default {
 
   },
   props: {
-    data: Array
+    data: Array,
+    couses:Array
   },
   data() {
     return {
