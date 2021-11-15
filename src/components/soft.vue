@@ -3,22 +3,13 @@
       <p id="title">Soft Skills</p>
       <div class="col-sm-12 col-lg-12">
         <div id="SoftSkills" class="SoftSkills">
-          <p id="desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem harum unde molestias consectetur eos cum quod doloremque molestiae, et aliquid quisquam magnam earum iste ab quis, odio fugit accusamus porro.
-          </p>
-          <p id="desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem harum unde molestias consectetur eos cum quod doloremque molestiae, et aliquid quisquam magnam earum iste ab quis, odio fugit accusamus porro.
-          </p>
-          <p id="desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem harum unde molestias consectetur eos cum quod doloremque molestiae, et aliquid quisquam magnam earum iste ab quis, odio fugit accusamus porro.
-          </p>
-          <p id="desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem harum unde molestias consectetur eos cum quod doloremque molestiae, et aliquid quisquam magnam earum iste ab quis, odio fugit accusamus porro.
-          </p>
-          <div v-for="i in data" :key="i.title" class="soft">
-            <p><span class="tech">{{i.title}} </span><span class="year">({{i.level}} year)</span></p>
+          <p id="desc" v-for="item in data.text" :key="item.id" v-html="item.text">
+                {{item.text}}
+            </p>
+          <div v-for="i in data.skills" :key="i.title" class="soft">
+            <p><span class="tech">{{i.title}} </span><span class="year">({{i.level}})</span></p>
             <div class="progress">
-              <div class="progress-bar progress-bar-animated" role="progressbar" :style="{width: i.level+1+ '0%' }"></div>
+              <div class="progress-bar progress-bar-animated" role="progressbar" :style="{width: i.level+'0%' }"></div>
             </div>
           </div>
         </div>
@@ -31,7 +22,7 @@
 export default {
   name: 'softs',
   props: {
-    data: Array
+    data: Object
   },
   data() {
     return {
@@ -65,6 +56,8 @@ export default {
 .soft{
   text-align: left;
   padding: 15px 0px 0px 0px;
+  max-width: 71em;
+  margin: 0 auto;
 }
 .soft p{
   padding-bottom: 0px;
