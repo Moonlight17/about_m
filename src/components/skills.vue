@@ -1,6 +1,6 @@
 <template>
     <div id="skills" class="skills row">
-      <p id="title">Skills</p>
+      <p id="title">Hard Skills</p>
         <div class="com-sm-12 col-lg-6 column">
           <!-- <p class="mini_title" @click="Height('DevOps')">DevOps</p> -->
           <p class="mini_title">DevOps</p>
