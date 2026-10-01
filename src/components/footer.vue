@@ -17,14 +17,10 @@
 <script>
 export default {
   name: 'Footer',
-  data() {
-    return {
-      year: 2021,
+  computed: {
+    year() {
+      return new Date().getFullYear();
     }
-  },
-  mounted(){
-    let newDate = new Date();
-    this.year = newDate.getFullYear();
   }
 }
 </script>

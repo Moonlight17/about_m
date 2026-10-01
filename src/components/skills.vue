@@ -6,9 +6,9 @@
           <p class="mini_title">DevOps</p>
           <div id="DevOps" class="DevOps">
             <div v-for="i in data.DevOps" :key="i.title" class="skill">
-              <p><span class="tech">{{i.title}} </span><span class="year">({{i.dateStart}} years)</span></p>
+              <p><span class="tech">{{i.title}} </span><span class="year">({{i.level}})</span></p>
               <div class="progress">
-                <div class="progress-bar progress-bar-animated" role="progressbar" :style="{width: (i.dateStart/maxim.DevOps)*100+ '%' }"></div>
+                <div class="progress-bar progress-bar-animated" role="progressbar" :style="{width: (i.level/maxLevels.DevOps)*100+ '%' }"></div>
               </div>
             </div>
           </div>
@@ -18,9 +18,9 @@
           <p class="mini_title">Develop</p>
           <div id="Develop" class="Develop">
             <div v-for="i in data.Develop" :key="i.title" class="skill">
-              <p><span class="tech">{{i.title}} </span><span class="year">({{i.dateStart}} years)</span></p>
+              <p><span class="tech">{{i.title}} </span><span class="year">({{i.level}})</span></p>
               <div class="progress">
-                <div class="progress-bar progress-bar-animated" role="progressbar" :style="{width: (i.dateStart/maxim.Develop)*100+ '%' }"></div>
+                <div class="progress-bar progress-bar-animated" role="progressbar" :style="{width: (i.level/maxLevels.Develop)*100+ '%' }"></div>
               </div>
             </div>
           </div>
@@ -35,44 +35,13 @@ export default {
   props: {
     data: Object
   },
-  data() {
-    return {
-      maxim:{}
-    }
-  },
-  mounted() {
-    this.convert();
-  },
-  methods: {
-    convert(){
-      var term={};
-      this.maxim={};
-      let act,iter;
-        let check = new Date();
-        let milliDays = 1000*60*60*24;
-      for ( act in this.data){
-        term[act]=[]
-        for (iter in this.data[act]) {
-          // console.log(this.data[act][iter])
-          let years = new Date(this.data[act][iter].dateStart);
-          let AgeInDays = (check - years)/milliDays;
-          this.data[act][iter].dateStart = Math.ceil(AgeInDays/365);
-
-          // console.log(this.data[act][iter].dateStart);
-          term[act].push(this.data[act][iter].dateStart);
-        }
-      }
-      this.maximum(term);
-    },
-    maximum(term){
-      for (let act in term){
-        this.maxim[act] = Math.max.apply(null, term[act]);
-      }
-    }
-  },
   computed: {
-    info(){
-      return 0
+    maxLevels() {
+      const result = {};
+      for (const category in this.data) {
+        result[category] = Math.max(...this.data[category].map(s => s.level));
+      }
+      return result;
     }
   }
 }
