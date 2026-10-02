@@ -1,33 +1,32 @@
 <template>
-    <div id="skills" class="skills row">
-      <p id="title">Hard Skills</p>
-        <div class="com-sm-12 col-lg-6 column">
-          <!-- <p class="mini_title" @click="Height('DevOps')">DevOps</p> -->
-          <p class="mini_title">DevOps</p>
-          <div id="DevOps" class="DevOps">
-            <div v-for="i in data.DevOps" :key="i.title" class="skill">
-              <p><span class="tech">{{i.title}} </span><span class="year">({{i.level}})</span></p>
-              <div class="progress">
-                <div class="progress-bar progress-bar-animated" role="progressbar" :style="{width: (i.level/maxLevels.DevOps)*100+ '%' }"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="com-sm-12 col-lg-6 column">
-          <!-- <p class="mini_title" @click="Height('Develop')">Develop</p> -->
-          <p class="mini_title">Develop</p>
-          <div id="Develop" class="Develop">
-            <div v-for="i in data.Develop" :key="i.title" class="skill">
-              <p><span class="tech">{{i.title}} </span><span class="year">({{i.level}})</span></p>
-              <div class="progress">
-                <div class="progress-bar progress-bar-animated" role="progressbar" :style="{width: (i.level/maxLevels.Develop)*100+ '%' }"></div>
-              </div>
-            </div>
+  <div id="skills" class="section skills row">
+    <p class="section-title">Hard Skills</p>
+    <div class="com-sm-12 col-lg-6 column">
+      <p class="mini_title">DevOps</p>
+      <div id="DevOps" class="DevOps glass-card">
+        <div v-for="i in data.DevOps" :key="i.title" class="skill">
+          <p><span class="tech">{{i.title}} </span><span class="year">({{i.level}})</span></p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-animated" role="progressbar"
+              :style="{width: (i.level/maxLevels.DevOps)*100+ '%' }"></div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="com-sm-12 col-lg-6 column">
+      <p class="mini_title">Develop</p>
+      <div id="Develop" class="Develop glass-card">
+        <div v-for="i in data.Develop" :key="i.title" class="skill">
+          <p><span class="tech">{{i.title}} </span><span class="year">({{i.level}})</span></p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-animated" role="progressbar"
+              :style="{width: (i.level/maxLevels.Develop)*100+ '%' }"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
-
 
 <script>
 export default {
@@ -48,59 +47,53 @@ export default {
 </script>
 
 <style scoped>
-#skills{
+#skills {
   color: #b4b4b4;
   position: relative;
   width: 100%;
-  padding: 0 8%;
+  padding: 0 8% 10% 8%;
 }
-#title{
-    text-align: left;
-    font-size: 1.4em;
+.mini_title {
+  width: 50%;
+  margin: 0 auto 1.5rem auto;
+  font-size: 1.2em;
+  padding: 8px 7%;
+  border: 2px solid rgba(0, 212, 255, 0.3);
+  color: #00d4ff;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
-.mini_title{
-    width: 50%;
-    margin: 0 auto;
-    font-size: 1.2em;
-    padding: 0;
-    padding: 0 7%;
-    border: 2px solid #b4b4b4;
-}
-.skills{
-  color: #b4b4b4;
-  position: relative;
-  width: 100%;
-  padding: 0 80px 150px 80px;
-}
-.column{
+.column {
   margin-bottom: 10%;
 }
-.skill{
+.skill {
   text-align: left;
-  padding: 15px 30px 0px 30px;
+  padding: 15px 0 0 0;
 }
-.skill p{
-  padding-bottom: 0px;
+.skill p {
+  padding-bottom: 0;
   margin-bottom: 0;
   width: 100%;
   text-align: right;
 }
-.progress-bar{
-  background-color: #f26b38;
+.progress-bar {
+  background: linear-gradient(90deg, #00d4ff, #00ff88);
 }
-.tech{
+.tech {
   font-size: 1em;
-  font-variation-settings: 'wght' 600, 'wdth' 50;
+  font-weight: 600;
   display: inline-block;
   float: left;
+  color: #e0e0e0;
 }
-.year{
+.year {
   text-align: right;
-  padding-right: 0%;
+  color: #888;
 }
-.progress{
-  height: 0.23em;
-}
-.skill:hover .progress{
+.progress {
+  height: 0.3em;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
 }
 </style>

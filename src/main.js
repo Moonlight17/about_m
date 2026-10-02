@@ -9,21 +9,25 @@ import {
   faFacebook,
   faGithub,
   faInstagram,
-  faLinkedin
-  
+  faLinkedin,
+  faTelegram
 } from "@fortawesome/free-brands-svg-icons";
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
+import {
+  faArrowDown,
+  faArrowUp,
+  faEnvelope,
+  faMapMarkerAlt,
+  faExternalLinkAlt,
+  faCode
+} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-library.add(faFacebook, faGithub, faInstagram, faLinkedin, faArrowDown);
+library.add(faFacebook, faGithub, faInstagram, faLinkedin, faArrowDown, faArrowUp, faEnvelope, faMapMarkerAlt, faExternalLinkAlt, faCode, faTelegram);
 
 // Хронология
 import VueTimeline from "@growthbunker/vuetimeline";
 Vue.use(VueTimeline);
 
-
 Vue.component("font-awesome-icon", FontAwesomeIcon);
-
-
 
 Vue.config.productionTip = false
 

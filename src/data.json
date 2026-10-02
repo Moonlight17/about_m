@@ -10,15 +10,15 @@
     "resume":[
         {
             "id":0,
-            "text":"I am a DevOps engineer with 4 years of experience (1 year: DevOps + 3 years: Backend developer). At the moment I am engaged in professional development in the direction of DevOps."
+            "text":"I am a DevOps engineer with 7+ years of experience (4+ years in DevOps & Cloud Infrastructure + 3+ years as a Backend developer). Currently focused on professional growth in cloud-native technologies, CI/CD automation, and infrastructure as code."
         },
         {
             "id":1,
-            "text":"I have hands-on experience in setting up a Pipeline for sourcing using TeamCity and Jenkins; writing scripts to publish artifacts to Nexus and DockerHub; building containers with Docker (Docker-compose); setting up virtual machines using Ansible, a little practical experience with cloud platforms using Terraform for Google Cloud Platform, Amazon Web Services, Yandex Cloud; configured monitoring with Zabbix, Fluentd & Elastic Search & Kibana, Prometheus & Node-Exporter & Alertmanager & Grafana."
+            "text":"I have extensive hands-on experience in setting up end-to-end Pipelines using TeamCity and Jenkins; writing scripts to publish artifacts to Nexus and DockerHub; building and orchestrating containers with Docker and Docker-compose; managing Kubernetes clusters; provisioning infrastructure with Terraform across Google Cloud Platform, Amazon Web Services, and Yandex Cloud; configuration management with Ansible; and monitoring with Zabbix, ELK Stack (Fluentd & ElasticSearch & Kibana), and Prometheus stack (Prometheus & Node-Exporter & Alertmanager & Grafana)."
         },
         {
             "id":2,
-            "text":"I plan to develop in this direction further, improving my current knowledge and studying new technologies. I plan to receive my first AWS certification in 2022."
+            "text":"I continuously improve my skills by exploring new technologies, earning certifications, and applying best practices in real-world projects. My goal is to design and maintain robust, scalable, and secure infrastructure that empowers development teams to ship faster and with confidence."
         }
     ],
     "edu":[
@@ -313,5 +313,42 @@
             "title": "AutoDesk Maya",
             "path": "Maya.png"
         }
-    ]
+    ],
+    "projects":[
+        {
+            "id": 0,
+            "title": "CI/CD Pipeline Automation",
+            "description": "Designed and implemented a fully automated CI/CD pipeline using TeamCity and Jenkins with artifact publishing to Nexus and DockerHub, enabling zero-downtime deployments across multiple environments.",
+            "techStack": ["TeamCity", "Jenkins", "Docker", "Nexus", "PowerShell"],
+            "link": ""
+        },
+        {
+            "id": 1,
+            "title": "Cloud Infrastructure as Code",
+            "description": "Provisioned and managed multi-cloud infrastructure on AWS, GCP, and Yandex Cloud using Terraform, with automated configuration via Ansible and centralized monitoring.",
+            "techStack": ["Terraform", "Ansible", "AWS", "GCP", "Yandex Cloud"],
+            "link": ""
+        },
+        {
+            "id": 2,
+            "title": "Monitoring Stack Deployment",
+            "description": "Deployed and configured a comprehensive monitoring solution combining Prometheus, Grafana, and ELK Stack for real-time infrastructure and application observability.",
+            "techStack": ["Prometheus", "Grafana", "ElasticSearch", "Kibana", "Fluentd"],
+            "link": ""
+        },
+        {
+            "id": 3,
+            "title": "Kubernetes Cluster Management",
+            "description": "Set up and maintained production-grade Kubernetes clusters with automated scaling, rolling updates, and integrated CI/CD for containerized microservices.",
+            "techStack": ["Kubernetes", "Docker", "Helm", "OpenShift"],
+            "link": ""
+        }
+    ],
+    "contacts": {
+        "email": "Moonlight234@yandex.ru",
+        "github": "https://github.com/Moonlight17",
+        "linkedin": "https://www.linkedin.com/in/moonlight1790",
+        "location": "Moscow, Russia",
+        "telegram": ""
+    }
 }
